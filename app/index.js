@@ -2,6 +2,7 @@
 const { spawn } = require("node:child_process");
 const fs = require("fs");
 const https = require("https");
+const http = require("http");
 
 const arch = process.arch;
 console.log("arch:", arch);
