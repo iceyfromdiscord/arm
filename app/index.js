@@ -14,3 +14,11 @@ if (arch == "x64") {
 } else {
   console.log("unsupported architecture");
 }
+
+const http = require("http");
+const PORT =  3000;
+http.createServer((req, res) => {
+  res.end("running!");
+}).listen(PORT, () => {
+  console.log("listening on: ", PORT);
+});
