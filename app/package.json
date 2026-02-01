@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nohup node . &",
-    "dev": "nohup node . &"
+    "start": "node .",
+    "dev": "node ."
   },
   "keywords": [],
   "author": "",
