@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "echo balls",
-    "dev": "echo balls"
+    "start": "node .",
+    "dev": "node ."
   },
   "keywords": [],
   "author": "",
